@@ -1,6 +1,6 @@
-package narlae.LoginPattern.service;
+package narlae.LoginPattern.domain.member;
 
-import narlae.LoginPattern.mapper.MemberMapper;
+import narlae.LoginPattern.domain.mapper.MemberMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

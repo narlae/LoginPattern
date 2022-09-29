@@ -1,7 +1,7 @@
-package narlae.LoginPattern.controller;
+package narlae.LoginPattern.web.member;
 
 import narlae.LoginPattern.domain.ResponseDto;
-import narlae.LoginPattern.service.MemberService;
+import narlae.LoginPattern.domain.member.MemberService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping("/member")
+@RequestMapping("/members")
 public class MemberController {
 
     private final MemberService memberService;

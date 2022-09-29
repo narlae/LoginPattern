@@ -1,4 +1,4 @@
-package narlae.LoginPattern.domain;
+package narlae.LoginPattern.domain.member;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 @Data
-public class MemberDto {
+public class Member {
     private Integer member_id;
     private String member_email;
     private String member_nm;

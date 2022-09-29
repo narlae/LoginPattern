@@ -1,4 +1,4 @@
-package narlae.LoginPattern.mapper;
+package narlae.LoginPattern.domain.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
