@@ -34,6 +34,7 @@ public class MyBatisConfig {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(DataSource);
         sqlSessionFactoryBean.setMapperLocations(applicationContext.getResources(mPath));
+        sqlSessionFactoryBean.setTypeAliasesPackage("narlae.LoginPattern.domain");
         return sqlSessionFactoryBean.getObject();
     }
 

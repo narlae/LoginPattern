@@ -27,7 +27,7 @@
         </div>
         <div>
             <label for="member_email">로그인(이메일)</label>
-            <input type="text" id="member_email" th:field="*{loginId}" class="formcontrol"
+            <input type="text" id="member_email" th:field="*{loginId}" class="form-control"
                    th:errorclass="field-error">
             <div class="field-error" th:errors="*{loginId}" />
         </div>
@@ -40,19 +40,19 @@
         </div>
         <div>
             <label for="member_nm">이름</label>
-            <input type="text" id="member_nm" th:field="*{name}" class="formcontrol"
+            <input type="text" id="member_nm" th:field="*{name}" class="form-control"
                    th:errorclass="field-error">
             <div class="field-error" th:errors="*{name}" />
         </div>
         <div>
             <label for="member_telno">전화번호</label>
-            <input type="text" id="member_telno" th:field="*{name}" class="formcontrol"
+            <input type="text" id="member_telno" th:field="*{name}" class="form-control"
                    th:errorclass="field-error">
             <div class="field-error" th:errors="*{name}" />
         </div>
         <div>
             <label for="member_birth">생일</label>
-            <input type="text" id="member_birth" th:field="*{name}" class="formcontrol"
+            <input type="text" id="member_birth" th:field="*{name}" class="form-control"
                    th:errorclass="field-error">
             <div class="field-error" th:errors="*{name}" />
         </div>

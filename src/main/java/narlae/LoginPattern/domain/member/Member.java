@@ -1,11 +1,13 @@
 package narlae.LoginPattern.domain.member;
 
 import lombok.Data;
+import org.apache.ibatis.type.Alias;
 
 import java.util.Date;
 
 
 @Data
+@Alias("MemberDto")
 public class Member {
     private Integer member_id;
     private String member_email;

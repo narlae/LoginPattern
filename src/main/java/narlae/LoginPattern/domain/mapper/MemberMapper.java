@@ -1,5 +1,6 @@
 package narlae.LoginPattern.domain.mapper;
 
+import narlae.LoginPattern.domain.member.Member;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -11,4 +12,6 @@ import java.util.HashMap;
 public interface MemberMapper {
 
     ArrayList<HashMap<String, Object>> findAll();
+
+    Integer memberAdd(Member member);
 }
