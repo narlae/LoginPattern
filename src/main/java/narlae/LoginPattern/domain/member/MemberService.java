@@ -13,7 +13,7 @@ public class MemberService {
 
     private final MemberMapper memberMapper;
 
-    public ArrayList<HashMap<String, Object>> findAll() {
+    public ArrayList<Member> findAll() {
         return memberMapper.findAll();
     }
     public Integer regMember(Member member) {

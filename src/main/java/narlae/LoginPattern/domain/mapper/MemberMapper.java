@@ -11,7 +11,7 @@ import java.util.HashMap;
 @Repository
 public interface MemberMapper {
 
-    ArrayList<HashMap<String, Object>> findAll();
-
+    //    ArrayList<HashMap<String, Object>> findAll();
+    ArrayList<Member> findAll();
     Integer memberAdd(Member member);
 }
