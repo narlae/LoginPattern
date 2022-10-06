@@ -42,7 +42,8 @@ public class MemberController {
     }
 
     @GetMapping("/add")
-    public String addForm() {
+    public String addForm(Model model) {
+        model.addAttribute("member", new MemberSaveForm());
         return "members/addMemberForm";
     }
 
@@ -55,8 +56,8 @@ public class MemberController {
             return "members/addMemberForm";
         }
 
-//        memberService.regMember(member);
-
+        Member member = memberService.formToMember(form);
+        memberService.regMember(member);
 
         return "home";
     }
