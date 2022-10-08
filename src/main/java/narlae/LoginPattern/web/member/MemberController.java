@@ -2,19 +2,16 @@ package narlae.LoginPattern.web.member;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import narlae.LoginPattern.domain.ResponseDto;
 import narlae.LoginPattern.domain.member.Member;
 import narlae.LoginPattern.domain.member.MemberService;
 import narlae.LoginPattern.web.member.form.MemberSaveForm;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 @Slf4j
 @Controller
 @RequiredArgsConstructor

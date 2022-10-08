@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -36,5 +36,12 @@ public class MemberService {
     }
     public Integer regMember(Member member) {
         return memberMapper.memberAdd(member);
+    }
+
+    public Optional<Member> findByLoginId(String loginId) {
+        return findAll().stream()
+                .filter(m -> m.getMember_email().equals(loginId))
+                .findFirst();
+
     }
 }
