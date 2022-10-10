@@ -13,4 +13,6 @@ public class LoginForm {
     @NotEmpty
     private String member_pwd;
 
+    private boolean rememberId;
+
 }
