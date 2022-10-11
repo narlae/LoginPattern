@@ -47,7 +47,8 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public String login(@Valid @ModelAttribute LoginForm form, BindingResult bindingResult, @RequestParam(defaultValue = "/") String redirectURL,
+    public String login(@Valid @ModelAttribute LoginForm form, BindingResult bindingResult,
+                        @RequestParam(defaultValue = "/") String redirectURL,
                         HttpServletRequest request, HttpServletResponse response) {
         if (bindingResult.hasErrors()) {
             return "/login/loginForm";
@@ -64,7 +65,8 @@ public class LoginController {
 
         boolean isRememberId = form.isRememberId();
         addCookie(form, response, isRememberId);
-
+        log.info("무사히 도착");
+        log.info("리다이렉트 URL ={}", redirectURL);
         return "redirect:" + redirectURL;
     }
 

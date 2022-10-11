@@ -19,8 +19,8 @@ import java.util.ArrayList;
 public class MemberController {
 
     private final MemberService memberService;
-    
-//    @PostMapping("/findAll")
+
+    //    @PostMapping("/findAll")
 //    @ResponseBody
 //    public ResponseEntity<?> findAll() {
 //        ResponseDto responseDto = new ResponseDto();
@@ -29,6 +29,10 @@ public class MemberController {
 //
 //        return new ResponseEntity<>(responseDto, HttpStatus.OK);
 //    }
+    @GetMapping("/admin")
+    public String admin() {
+        return "members/admin/adminHome";
+    }
 
 
     @GetMapping("/list")

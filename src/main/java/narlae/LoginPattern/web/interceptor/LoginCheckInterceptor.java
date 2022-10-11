@@ -27,3 +27,5 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
         return true;
     }
 }
+//http://localhost:8080/login?redirectURL=/items
+//http://localhost:8080/login?redirectURL=/members/admin
