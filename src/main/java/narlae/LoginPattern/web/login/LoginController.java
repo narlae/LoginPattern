@@ -65,8 +65,6 @@ public class LoginController {
 
         boolean isRememberId = form.isRememberId();
         addCookie(form, response, isRememberId);
-        log.info("무사히 도착");
-        log.info("리다이렉트 URL ={}", redirectURL);
         return "redirect:" + redirectURL;
     }
 

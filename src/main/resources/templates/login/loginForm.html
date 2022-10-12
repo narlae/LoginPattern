@@ -19,7 +19,7 @@
     <div class="py-5 text-center">
         <h2>로그인</h2>
     </div>
-    <form action="item.html" th:action ="@{/login}" th:object="${loginForm}" method="post">
+    <form action="item.html" th:action th:object="${loginForm}" method="post">
         <div>
             <label for="loginId">아이디(이메일)</label>
             <input type="text" id="loginId" th:field="*{member_email}" class="form-control"
